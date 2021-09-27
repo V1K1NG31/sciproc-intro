@@ -2,7 +2,7 @@
 # Front matter
 lang: ru-RU
 title: "Отчёт по лабораторной работе №6"
-author: "Сырцов Александр Юрьевич"
+author: "Юрченко С.В. группа НФИбд-03-19"
 
 # Formatting
 toc-title: "Содержание"
