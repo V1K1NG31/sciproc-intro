@@ -1,0 +1,249 @@
+>> 2*6+(7-4)^2
+ans = 21
+>> u = [1 -4  6]
+u =
+
+   1  -4   6
+
+>> u = [1;4;6]
+u =
+
+   1
+   4
+   6
+
+>> u = [1;-4;6]
+u =
+
+   1
+  -4
+   6
+
+>> A = [1 2 -3; 2 4 0; 1 1 1]
+A =
+
+   1   2  -3
+   2   4   0
+   1   1   1
+
+>> u = [1; -4; 6]
+u =
+
+   1
+  -4
+   6
+
+>> v = [2;1;-1]
+v =
+
+   2
+   1
+  -1
+
+>> 2*v+3*u
+ans =
+
+    7
+  -10
+   16
+
+>> dot(u,v)
+ans = -8
+>> cross(u,v)
+ans =
+
+   -2
+   13
+    9
+
+>> norm(u)
+ans = 7.2801
+>> u=[3 5]
+u =
+
+   3   5
+
+>> v=[7 2]
+v =
+
+   7   2
+
+>> proj=dot(u,v)/(norm(v))^2*v
+proj =
+
+   4.0943   1.1698
+
+>> A=[1 2 -3;2 4 0;1 1 1]
+A =
+
+   1   2  -3
+   2   4   0
+   1   1   1
+
+>> B=[1 2  3 4; 0 -2 -4 6;1 -1 0 0]
+B =
+
+   1   2   3   4
+   0  -2  -4   6
+   1  -1   0   0
+
+>> A*B
+ans =
+
+   -2    1   -5   16
+    2   -4  -10   32
+    2   -1   -1   10
+
+>> B'*A
+ans =
+
+    2    3   -2
+   -3   -5   -7
+   -5  -10   -9
+   16   32  -12
+
+>> 2*A-4*eye(3)
+ans =
+
+  -2   4  -6
+   4   4   0
+   2   2  -2
+
+>> eye(3)
+ans =
+
+Diagonal Matrix
+
+   1   0   0
+   0   1   0
+   0   0   1
+
+>> eye(4)
+ans =
+
+Diagonal Matrix
+
+   1   0   0   0
+   0   1   0   0
+   0   0   1   0
+   0   0   0   1
+
+>> det(A)
+ans = 6
+>> inv(A)
+ans =
+
+   0.6667  -0.8333   2.0000
+  -0.3333   0.6667  -1.0000
+  -0.3333   0.1667        0
+
+>> eig(A)
+ans =
+
+   4.5251 +      0i
+   0.7374 + 0.8844i
+   0.7374 - 0.8844i
+
+>> rank(A)
+ans = 3
+>> x=linspace(0,2*pi,50)
+x =
+
+ Columns 1 through 6:
+
+        0   0.1282   0.2565   0.3847   0.5129   0.6411
+
+ Columns 7 through 12:
+
+   0.7694   0.8976   1.0258   1.1541   1.2823   1.4105
+
+ Columns 13 through 18:
+
+   1.5387   1.6670   1.7952   1.9234   2.0517   2.1799
+
+ Columns 19 through 24:
+
+   2.3081   2.4363   2.5646   2.6928   2.8210   2.9493
+
+ Columns 25 through 30:
+
+   3.0775   3.2057   3.3339   3.4622   3.5904   3.7186
+
+ Columns 31 through 36:
+
+   3.8468   3.9751   4.1033   4.2315   4.3598   4.4880
+
+ Columns 37 through 42:
+
+   4.6162   4.7444   4.8727   5.0009   5.1291   5.2574
+
+ Columns 43 through 48:
+
+   5.3856   5.5138   5.6420   5.7703   5.8985   6.0267
+
+ Columns 49 and 50:
+
+   6.1550   6.2832
+
+>> x=linspace(0,2*pi,50);
+>> y=sin(x);
+>> plot(x,y);
+>> clf
+>> plot(x,y,'r','linewidth',3
+)
+>> axis([0 2*pi -1 1]);
+>> grid on 
+>> xlabel('x');
+>> ylabel('y')
+>> title('Sine graph');
+>> legen('y=sin(x)');
+error: 'legen' undefined near line 1, column 1
+>> legend('y=sin(x)');
+>> clear;
+>> clf;
+>> x=[1 2 3 4]
+x =
+
+   1   2   3   4
+
+>> y = [1 2 5 4]
+y =
+
+   1   2   5   4
+
+>> plot(x,y,'o')
+>> hold on
+>> plot (x,1.2*x)
+>> grid on
+>> axis([0 5 0 6])
+>> legend('data points','regressionline');
+>> clear;
+>> clf;
+>> x=linspace(-10,10,100);
+>> plot(x,x^2*sin(x))
+error: for x^y, only square matrix arguments are permitted and one argument must be scalar.  Use .^ for elementwise power.
+>> plot(x,x.^2.*sin(x))
+>> print graph2.png -dpng
+>> print ('graph2.pdf', '-dpdf')
+>> clear;
+>> clf;
+>> tic
+>> s =0;
+>> fot n=1:100000
+error: 'fot' undefined near line 1, column 1
+>> for n=1:100000
+s =s+1/n^2;
+end
+>> toc
+Elapsed time is 58.3553 seconds.
+>> loop_for
+error: 'loop_for' undefined near line 1, column 1
+>> loop_for.m
+error: invalid call to script C:\Users\s.yurchenko\work\2020-2021\Введение в научное программирование\labs\lab03\loop_for.m
+error: called from
+    loop_for
+>> loop_for
+Elapsed time is 0.16302 seconds.
+>> loop_vec
+Elapsed time is 0.040628 seconds.
+>> diary off
